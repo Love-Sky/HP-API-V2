@@ -56,6 +56,8 @@ public class MarkFishServiceImpl implements MarkFishService{
 	@Override
 	@Transactional(readOnly = false,rollbackFor = {Exception.class})
 	public void addSiteMarkFish(MarkFish markFish) {
+		Integer status = 1;
+		markCodeMapper.updateMarkCode(status,markFish.getMarkNum());
 		markFishMapper.addMarkFish(markFish);
 	}
 

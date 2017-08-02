@@ -23,7 +23,7 @@ public interface MarkCodeMapper {
 	
 	void addMarkCode(MarkCode markCode);
 	
-	void updateMarkCode(@Param("status") Integer status);
+	void updateMarkCode(@Param("status") Integer status,@Param("markNum")String markNum);
 	
 	void deleteMarkCode(@Param("id")Integer id);
 }

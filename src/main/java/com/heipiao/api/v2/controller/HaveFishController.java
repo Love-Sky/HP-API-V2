@@ -117,7 +117,7 @@ public class HaveFishController {
 			+ "如果是管理员或钓场主发布标鱼信息，需要同时添加一下参数"
 			+ "fishSize: 有鱼大小<br/>"
 			+ "rewardUid：中标用户id<br/>"
-			+ "markedNum：中标鱼标编码<br/>"
+			+ "markCode：中标鱼标编码<br/>"
 			)
 	@RequestMapping(method = RequestMethod.POST)
 	public String applyHaveFish(@RequestBody HaveFish haveFish){
